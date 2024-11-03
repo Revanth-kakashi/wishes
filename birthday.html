@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Wishes</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+            background-image: url(project.jpg);
+        }
+        .container {
+            text-align: center;
+        }
+        .message {
+            font-size: 2em;
+            color: #ff6b6b;
+            opacity: 0;
+            transition: opacity 1s ease-in;
+        }
+        .balloons {
+            font-size: 3em;
+            opacity: 0;
+            transition: opacity 2s ease-in;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            background-color: #ff6b6b;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #ff4757;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="message" id="message">"Happy Birthday to my one and only! You’re the peanut butter to my jelly, the smile to my bad jokes, and the love of my life. Here’s to many more birthdays together!" </div>
+        <div class="balloons" id="balloons">🎈🎉🎂🎉🎈</div>
+        <button onclick="showWishes()">Show Birthday Wishes</button>
+    </div>
+
+    <script>
+        function showWishes() {
+            const message = document.getElementById("message");
+            const balloons = document.getElementById("balloons");
+
+            message.style.opacity = "1";
+            balloons.style.opacity = "1";
+        }
+    </script>
+</body>
+</html>
